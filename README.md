@@ -1,2 +1,2 @@
 # ReactProjects
- Credits go to the CodeWithChai !!!
+ Credits goes to the CodeWithChai !!!
