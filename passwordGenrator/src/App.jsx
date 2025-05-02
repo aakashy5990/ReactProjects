@@ -29,9 +29,7 @@ function App() {
       passwordRef.current?.select();
       passwordRef.current?.setSelectionRange(0,length);
       window.navigator.clipboard.writeText(password);
-    }, 
-
-    [password]) 
+    }, [password]) 
   
   useEffect(()=>{
     passwordGenerator();
@@ -99,7 +97,7 @@ function App() {
             </label>
           </div>
 
-          <button className="btn btn-success w-100">Generate Password</button>
+          <button className="btn btn-success w-100" onClick={passwordGenerator}>Generate Password</button>
         </div>
       </div>
     </>

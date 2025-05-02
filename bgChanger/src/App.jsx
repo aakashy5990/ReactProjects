@@ -5,29 +5,26 @@ function App() {
 
   const [colorChanger,setColorChanger] = useState("#212529");
 
-  const colorhandler = (blue) => {
-    setColorChanger(blue);
-  }
   return (
     <>
       <div className="d-flex justify-content-center align-items-end" style={{ height: "100vh",backgroundColor:colorChanger}}>
         <div className="containers my-5">
-          <button type="button" className="btn btn-primary" onClick={() => colorhandler("blue")}>
+          <button type="button" className="btn btn-primary" onClick={() => setColorChanger("blue")}>
             Primary
           </button>
-          <button type="button" className="btn btn-secondary" onClick={() => colorhandler("gray")}>
+          <button type="button" className="btn btn-secondary" onClick={() => setColorChanger("gray")}>
             Secondary
           </button>
-          <button type="button" className="btn btn-success" onClick={() => colorhandler("green")}>
+          <button type="button" className="btn btn-success" onClick={() => setColorChanger("green")}>
             Success
           </button>
-          <button type="button" className="btn btn-danger" onClick={() => colorhandler("red")}>
+          <button type="button" className="btn btn-danger" onClick={() => setColorChanger("red")}>
             Danger
           </button>
-          <button type="button" className="btn btn-warning" onClick={() => colorhandler("yellow")}>
+          <button type="button" className="btn btn-warning" onClick={() => setColorChanger("yellow")}>
             Warning
           </button>
-          <button type="button" className="btn btn-info" onClick={() => colorhandler("skyblue")}>
+          <button type="button" className="btn btn-info" onClick={() => setColorChanger("skyblue")}>
             Info
           </button>
         </div>
